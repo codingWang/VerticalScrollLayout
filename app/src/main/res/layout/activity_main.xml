@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.verticalpager.VerticalScrollLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ed3ce5"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#54d0e6" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e75858" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6dcc8c" />
+
+</com.verticalpager.VerticalScrollLayout>
