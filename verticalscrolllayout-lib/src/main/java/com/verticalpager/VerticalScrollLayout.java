@@ -111,7 +111,7 @@ public class VerticalScrollLayout extends ViewGroup {
                 scrollBy(0,mScrolledY);
                 mLastDownY = mMoveStop;
                 break;
-            case MotionEvent.ACTION_UP:
+            case MotionEvent.ACTION_UP:     //手指抬起时，直接滚到目标视图
                 int toWhat = (getScrollY() + getHeight() / 2) / getHeight();
                 int dy = toWhat * getHeight() - getScrollY();
                 mScroller.startScroll(0, getScrollY(), 0, dy);
@@ -124,7 +124,6 @@ public class VerticalScrollLayout extends ViewGroup {
 
     @Override
     public void computeScroll() {
-        // 第三步，重写computeScroll()方法，并在其内部完成平滑滚动的逻辑
         if (mScroller.computeScrollOffset()) {
             scrollTo(mScroller.getCurrX(), mScroller.getCurrY());
             invalidate();
